@@ -14,7 +14,7 @@ public class Main {
          * git push
          */
 
-        double wylosowana = Math.random()*10+1;
+        int wylosowana = (int)(Math.random()*10+1);
         System.out.println(wylosowana);
 
     }
