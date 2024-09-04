@@ -3,5 +3,7 @@ public class Main {
 
         System.out.println("witaj swiecie");
 
+        System.out.println("lekcja 1 testgit");
+
     }
 }
