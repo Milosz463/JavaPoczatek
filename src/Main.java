@@ -56,7 +56,15 @@ obiekty ktore maja wlasnosci i metody
                 break;
             default:
                 System.out.println("Sprobuj szczescia innym razem");
-        }
+                 //wyrazenie switch\
+        System.out.println(
+                switch(roznica){
+                    case 0-> "brawo";
+                    case 1-> "Bardzo blisko";
+                    case 2->"Dosc blisko";
+                    default-> "Slabo";
+                }
+        };
 
     }
 }
