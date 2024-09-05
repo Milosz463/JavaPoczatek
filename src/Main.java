@@ -65,6 +65,34 @@ obiekty ktore maja wlasnosci i metody
                     default-> "Slabo";
                 }
         };
+        //zgadwyanie 10 razy
+        for(int i = 0;i <10; i++){
+            System.out.println("Zgadnij liczbe, proba nr "+i+1);
+            wpisanaLiczba = klawiatura.nextInt();
+            if(wpisanaLiczba == wylosowana){
+                System.out.println("wygrana");
+                break;
+            }else {
+                if(wpisanaLiczba>wylosowana){
+                    System.out.println("Wpisano za duzo");
+                }else {
+                    System.out.println("Wpisano za malo");
+                }
+            }
+        }
+        //zgadywanie do skutku
+        System.out.println("Zgadnij liczbe");
+        wpisanaLiczba= klawiatura.nextInt();
+        while (wpisanaLiczba !=wylosowana){
+            if(wpisanaLiczba>wylosowana){
+                System.out.println("Wpisano za duzo");
+            }else {
+                System.out.println("Wpisano za malo");
+            }
+            System.out.println("Zgadnij liczbe");
+            wpisanaLiczba = klawiatura.nextInt();
+        }
+        System.out.println("Gratulacje wygrana");
 
     }
 }
